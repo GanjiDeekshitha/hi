@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Navbar Hover Animation</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+
+    .navbar {
+      display: flex;
+      background-color: grey;
+      padding: 10px;
+    }
+
+    .navbar-item {
+      position: relative;
+      padding: 14px 20px;
+      color: white;
+      cursor: pointer;
+        }
+
+    .navbar-item:hover {
+      background-color: grey;
+    }
+
+    .hover-image {
+      display: none;
+      position: absolute;
+      top: 50px;
+      left: 0;
+      width: 300px;
+      z-index: 999;
+      border: 2px solid white;
+    }
+
+    .navbar-item:hover .hover-image {
+      display: block;
+    }
+  </style>
+</head>
+<body>
+     <div class="navbar">
+    <div class="navbar-item">
+      Hover Me
+      <img class="hover-image" src="https://sp-ao.shortpixel.ai/client/to_auto,q_lossy,ret_img/https://csswolf.com/wp-content/uploads/2022/09/bouncing-ball-animation-in-CSS.gif" alt="Bouncing Ball">
+    </div>
+    <div class="navbar-item">
+      Behind the Sun
+      <img class="hover-image" src="https://codingislove.com/wp-content/uploads/2021/01/behind-the-sun.gif" alt="Behind the Sun">
+    </div>
+    <div class="navbar-item">
+      Text Animation
+      <img class="hover-image" src="https://www.pyxofy.com/content/images/2023/05/pyxofy-css-animation-text-background.gif" alt="CSS Text Animation">
+    </div>
+  </div>
+
+</body>
+</html>
+
